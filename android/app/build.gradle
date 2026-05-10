@@ -1,0 +1,25 @@
+android {
+    compileSdkVersion 33
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "com.aklilzdz84.amharic_aklil_assefa"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.5.1"
+}
